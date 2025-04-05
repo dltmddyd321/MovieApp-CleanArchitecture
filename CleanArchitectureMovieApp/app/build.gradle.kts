@@ -67,6 +67,13 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
+    implementation (libs.androidx.room.runtime)
+    annotationProcessor (libs.androidx.room.compiler)
+    implementation (libs.androidx.room.rxjava2)
+    implementation (libs.androidx.room.rxjava3)
+    implementation (libs.androidx.room.guava)
+    testImplementation (libs.androidx.room.testing)
+    implementation (libs.androidx.room.paging)
 }
 
 kapt {

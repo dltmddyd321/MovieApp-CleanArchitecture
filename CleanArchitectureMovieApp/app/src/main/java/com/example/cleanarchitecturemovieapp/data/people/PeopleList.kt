@@ -1,5 +1,6 @@
 package com.example.cleanarchitecturemovieapp.data.people
 
+import androidx.room.Entity
 import com.google.gson.annotations.SerializedName
 
 data class KnownFor(
@@ -75,31 +76,21 @@ data class PeopleList(
     val totalResults: Int
 )
 
+@Entity(tableName = "popular_artist")
 data class PeopleResult(
-    @SerializedName("adult")
-    val adult: Boolean,
-
-    @SerializedName("gender")
-    val gender: Int,
 
     @SerializedName("id")
     val id: Int,
 
     @SerializedName("known_for")
-    val knownFor: List<KnownFor>?,
-
-    @SerializedName("known_for_department")
-    val knownForDepartment: String?,
+    val knownFor: List<KnownFor>,
 
     @SerializedName("name")
-    val name: String?,
-
-    @SerializedName("original_name")
-    val originalName: String?,
+    val name: String,
 
     @SerializedName("popularity")
-    val popularity: Double?,
+    val popularity: Double,
 
     @SerializedName("profile_path")
-    val profilePath: String?
+    val profilePath: String
 )
