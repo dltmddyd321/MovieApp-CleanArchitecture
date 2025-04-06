@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturemovieapp.data.repository
+package com.example.cleanarchitecturemovieapp.data.repository.respositoryimpl
 
 import android.util.Log
 import com.example.cleanarchitecturemovieapp.data.people.PeopleResult
