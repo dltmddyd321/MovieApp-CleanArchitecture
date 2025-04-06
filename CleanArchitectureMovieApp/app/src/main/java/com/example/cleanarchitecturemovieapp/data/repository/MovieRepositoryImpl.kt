@@ -2,9 +2,9 @@ package com.example.cleanarchitecturemovieapp.data.repository
 
 import android.util.Log
 import com.example.cleanarchitecturemovieapp.data.movie.MovieResult
-import com.example.cleanarchitecturemovieapp.data.repository.datasource.MovieCacheDataSource
-import com.example.cleanarchitecturemovieapp.data.repository.datasource.MovieLocalDataSource
-import com.example.cleanarchitecturemovieapp.data.repository.datasource.MovieRemoteDataSource
+import com.example.cleanarchitecturemovieapp.data.repository.datasource.movie.MovieCacheDataSource
+import com.example.cleanarchitecturemovieapp.data.repository.datasource.movie.MovieLocalDataSource
+import com.example.cleanarchitecturemovieapp.data.repository.datasource.movie.MovieRemoteDataSource
 import com.example.cleanarchitecturemovieapp.domain.repository.MovieRepository
 
 class MovieRepositoryImpl(

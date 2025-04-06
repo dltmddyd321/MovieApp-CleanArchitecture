@@ -1,7 +1,7 @@
-package com.example.cleanarchitecturemovieapp.data.repository.datasourceimpl
+package com.example.cleanarchitecturemovieapp.data.repository.datasourceimpl.movie
 
 import com.example.cleanarchitecturemovieapp.data.movie.MovieResult
-import com.example.cleanarchitecturemovieapp.data.repository.datasource.MovieCacheDataSource
+import com.example.cleanarchitecturemovieapp.data.repository.datasource.movie.MovieCacheDataSource
 import java.util.Collections
 
 class MovieCacheDataSourceImpl: MovieCacheDataSource {

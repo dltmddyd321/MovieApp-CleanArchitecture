@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturemovieapp.data.repository.datasource
+package com.example.cleanarchitecturemovieapp.data.repository.datasource.movie
 
 import com.example.cleanarchitecturemovieapp.data.movie.MovieResult
 

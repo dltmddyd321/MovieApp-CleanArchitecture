@@ -1,8 +1,8 @@
-package com.example.cleanarchitecturemovieapp.data.repository.datasourceimpl
+package com.example.cleanarchitecturemovieapp.data.repository.datasourceimpl.movie
 
 import com.example.cleanarchitecturemovieapp.data.db.dao.MovieDao
 import com.example.cleanarchitecturemovieapp.data.movie.MovieResult
-import com.example.cleanarchitecturemovieapp.data.repository.datasource.MovieLocalDataSource
+import com.example.cleanarchitecturemovieapp.data.repository.datasource.movie.MovieLocalDataSource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

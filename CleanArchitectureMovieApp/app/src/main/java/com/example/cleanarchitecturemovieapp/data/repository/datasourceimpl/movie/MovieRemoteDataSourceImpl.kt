@@ -1,8 +1,8 @@
-package com.example.cleanarchitecturemovieapp.data.repository.datasourceimpl
+package com.example.cleanarchitecturemovieapp.data.repository.datasourceimpl.movie
 
 import com.example.cleanarchitecturemovieapp.data.api.ApiService
 import com.example.cleanarchitecturemovieapp.data.movie.PopularMovieList
-import com.example.cleanarchitecturemovieapp.data.repository.datasource.MovieRemoteDataSource
+import com.example.cleanarchitecturemovieapp.data.repository.datasource.movie.MovieRemoteDataSource
 import retrofit2.Response
 
 class MovieRemoteDataSourceImpl(
