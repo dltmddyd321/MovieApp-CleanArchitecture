@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturemovieapp
+package com.example.cleanarchitecturemovieapp.application
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
