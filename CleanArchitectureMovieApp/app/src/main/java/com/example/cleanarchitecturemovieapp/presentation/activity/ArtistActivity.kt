@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturemovieapp.presentation
+package com.example.cleanarchitecturemovieapp.presentation.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,14 +13,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.cleanarchitecturemovieapp.presentation.ui.theme.CleanArchitectureMovieAppTheme
 
-class MovieActivity : ComponentActivity() {
+class ArtistActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             CleanArchitectureMovieAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting2(
+                    Greeting4(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
@@ -31,7 +31,7 @@ class MovieActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting2(name: String, modifier: Modifier = Modifier) {
+fun Greeting4(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -40,8 +40,8 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview2() {
+fun GreetingPreview4() {
     CleanArchitectureMovieAppTheme {
-        Greeting2("Android")
+        Greeting4("Android")
     }
 }

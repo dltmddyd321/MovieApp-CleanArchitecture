@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturemovieapp.presentation
+package com.example.cleanarchitecturemovieapp.presentation.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
