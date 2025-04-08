@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturemovieapp.presentation.di
+package com.example.cleanarchitecturemovieapp.presentation.di.core
 
 import com.example.cleanarchitecturemovieapp.data.api.ApiService
 import dagger.Module

@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturemovieapp.presentation.di
+package com.example.cleanarchitecturemovieapp.presentation.di.core
 
 import com.example.cleanarchitecturemovieapp.data.repository.datasource.artist.ArtistCacheDataSource
 import com.example.cleanarchitecturemovieapp.data.repository.datasource.movie.MovieCacheDataSource

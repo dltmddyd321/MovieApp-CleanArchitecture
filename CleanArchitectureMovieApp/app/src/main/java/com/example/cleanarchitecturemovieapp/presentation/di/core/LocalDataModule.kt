@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturemovieapp.presentation.di
+package com.example.cleanarchitecturemovieapp.presentation.di.core
 
 import com.example.cleanarchitecturemovieapp.data.db.dao.ArtistDao
 import com.example.cleanarchitecturemovieapp.data.db.dao.MovieDao

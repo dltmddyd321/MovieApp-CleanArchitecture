@@ -1,7 +1,6 @@
-package com.example.cleanarchitecturemovieapp.presentation.di
+package com.example.cleanarchitecturemovieapp.presentation.di.core
 
 import com.example.cleanarchitecturemovieapp.data.api.ApiService
-import com.example.cleanarchitecturemovieapp.data.db.TMDBDatabase
 import com.example.cleanarchitecturemovieapp.data.repository.datasource.artist.ArtistRemoteDataSource
 import com.example.cleanarchitecturemovieapp.data.repository.datasource.movie.MovieRemoteDataSource
 import com.example.cleanarchitecturemovieapp.data.repository.datasource.tvshow.TvShowRemoteDataSource
