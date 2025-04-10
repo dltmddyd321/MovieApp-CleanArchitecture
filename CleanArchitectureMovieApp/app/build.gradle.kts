@@ -18,8 +18,6 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
-        buildConfigField("String","API_KEY","30a309c59c2b70c8a58edc7c80de881f")
     }
 
     buildTypes {
@@ -41,6 +39,9 @@ android {
     buildFeatures {
         compose = true
     }
+    buildFeatures {
+        buildConfig = true
+    }
 }
 
 dependencies {
@@ -52,6 +53,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -61,6 +63,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.hilt.android.v244)
     kapt(libs.hilt.android.compiler)
+    implementation(libs.dagger)
+    kapt(libs.dagger.compiler)
     implementation(libs.retrofit)
     implementation(platform(libs.okhttp.bom))
     implementation (libs.glide)
