@@ -23,15 +23,15 @@ class MovieRepositoryImpl(
     }
 
     suspend fun getMoviesFromApi(): List<MovieResult> {
-        var movieList: List<MovieResult> = emptyList()
+        Log.i("진입 검사", "여기로 진입했는가? 1")
+        lateinit var movieList: List<MovieResult>
         try {
+            Log.i("진입 검사", "여기로 진입했는가? 2")
             val response = movieRemoteDataSource.getMovies()
-            val body = response.body()
-            if (response.isSuccessful && body != null) {
-                movieList = body.results ?: emptyList()
-            }
+            Log.i("진입 검사", "여기로 진입했는가? 3-1")
+            response.body()?.let { movieList = it.results }
         } catch (e: Exception) {
-            Log.e("MovieRepoImpl", e.localizedMessage ?: "")
+            Log.e("MovieRepoImpl", e.toString())
         }
         return movieList
     }

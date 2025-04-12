@@ -20,6 +20,7 @@ class UseCaseModule {
         return GetMoviesUseCase(movieRepository)
     }
 
+    @Provides
     fun provideUpdateMovieUseCase(movieRepository: MovieRepository): UpdateMoviesUseCase {
         return UpdateMoviesUseCase(movieRepository)
     }
@@ -30,6 +31,7 @@ class UseCaseModule {
         return GetTvShowsUseCase(tvShowRepository)
     }
 
+    @Provides
     fun provideUpdateTvShowUseCase(tvShowRepository: TvShowsRepository): UpdateTvShowsUseCase {
         return UpdateTvShowsUseCase(tvShowRepository)
     }
@@ -40,6 +42,7 @@ class UseCaseModule {
         return GetArtistUseCase(artistRepository)
     }
 
+    @Provides
     fun provideUpdateArtistUseCase(artistRepository: ArtistRepository): UpdateArtistUseCase {
         return UpdateArtistUseCase(artistRepository)
     }

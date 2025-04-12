@@ -1,6 +1,5 @@
 package com.example.cleanarchitecturemovieapp.data.movie
 
 data class PopularMovieList(
-    val page: Int,
-    val results: List<MovieResult>?
+    val results: List<MovieResult>
 )
