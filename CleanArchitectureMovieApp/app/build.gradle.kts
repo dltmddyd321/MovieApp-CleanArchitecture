@@ -61,12 +61,17 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.junit.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+    androidTestImplementation ("androidx.arch.core:core-testing:2.0.0")
+    testImplementation("org.mockito:mockito-core:1.10.19")
+    implementation ("org.mockito:mockito-core:5.3.1")
+    testImplementation("org.robolectric:robolectric:4.10.3")
 
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
@@ -86,6 +91,7 @@ dependencies {
     // ✅ Dagger
     implementation("com.google.dagger:dagger:2.50")
     kapt("com.google.dagger:dagger-compiler:2.50")
+    testImplementation(kotlin("test"))
 }
 
 kapt {
