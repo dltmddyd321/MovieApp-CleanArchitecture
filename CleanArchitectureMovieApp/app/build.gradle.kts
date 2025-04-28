@@ -69,6 +69,7 @@ dependencies {
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
     androidTestImplementation ("androidx.arch.core:core-testing:2.0.0")
+    testImplementation ("androidx.arch.core:core-testing:2.0.0")
     testImplementation("org.mockito:mockito-core:1.10.19")
     implementation ("org.mockito:mockito-core:5.3.1")
     testImplementation("org.robolectric:robolectric:4.10.3")
